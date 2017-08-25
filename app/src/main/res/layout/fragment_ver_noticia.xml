@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10px">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TxtCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="5sp"
+                android:textAlignment="center"/>
+
+
+            <ImageView
+                android:id="@+id/imgNoti"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="5dp"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/divider_horizontal_bright"
+                android:scaleType="fitXY"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/txtIntroduccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingExtra="7dp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/divider_horizontal_bright"
+                android:scaleType="fitXY"
+                android:padding="15dp"
+                />
+
+            <TextView
+                android:id="@+id/txtcontenido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="gravity"
+                android:lineSpacingExtra="7dp"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

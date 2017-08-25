@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/splash_fondo"
+android:layout_gravity="center"
+android:id="@+id/lin_lay"
+android:gravity="center"
+android:orientation="vertical" >
+
+<ImageView
+    android:layout_width="230dp"
+    android:layout_height="200dp"
+    android:layout_marginBottom="30dp"
+    android:id="@+id/splash"
+    android:maxWidth="100px"
+    android:maxHeight="100px"
+    android:background="@drawable/logouteqminres" />
+<ProgressBar
+    android:id="@+id/progressBar"
+    style="?android:attr/progressBarStyle"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"/>
+
+</LinearLayout>

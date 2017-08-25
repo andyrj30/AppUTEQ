@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AppUTEQ</string>
+    <string name="title_activity_animation">AnimationActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="footer">© 2017 Universidad Técnica Estatal de Quevedo \nderechos reservados</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="introTransparencia">La Ley Orgánica de Transparencia y Acceso a la Información Pública (LOTAIP) plantea la participación ciudadana y el derecho de acceso a la información relacionada con asuntos públicos, para ejercer un efectivo control
+        y exigir la rendición de cuentas a las instituciones gubernamentales o aquellas que perciben recursos estatales.</string>
+</resources>

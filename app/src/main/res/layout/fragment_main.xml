@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayoutN"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_weight="1.08"
+                    custom:auto_cycle="true"
+                    custom:indicator_visibility="visible"
+                    custom:pager_animation="Accordion"
+                    custom:pager_animation_span="1100" />
+
+                <com.daimajia.slider.library.Indicators.PagerIndicator
+                    android:id="@+id/custom_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    custom:selected_color="#0095BF"
+                    custom:unselected_color="#55333333"
+                    custom:shape="oval"
+                    custom:selected_padding_left="5dp"
+                    custom:selected_padding_right="5dp"
+                    custom:unselected_padding_left="5dp"
+                    custom:unselected_padding_right="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    custom:selected_width="6dp"
+                    custom:selected_height="6dp"
+                    custom:unselected_width="6dp"
+                    custom:unselected_height="6dp"
+                    android:layout_marginBottom="5dp"
+                    />
+                <com.daimajia.slider.library.Indicators.PagerIndicator
+                    android:id="@+id/custom_indicator2"
+                    style="@style/AndroidImageSlider_Corner_Oval_Orange"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/borde"
+                    android:text="Noticias - Lo último agregado"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvNoticia"
+                    android:layout_width="match_parent"
+                    android:minHeight="200dp"
+                    android:layout_height="wrap_content"/>
+
+                <include layout="@layout/layout_footer"/>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

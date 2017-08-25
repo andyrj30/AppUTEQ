@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_universidad"
+            android:icon="@drawable/oldschool"
+            android:title="Universidad" />
+        <item
+            android:id="@+id/nav_noticias"
+            android:icon="@drawable/around"
+            android:title="Noticias" />
+        <item
+            android:id="@+id/nav_investigacion"
+            android:icon="@drawable/idea"
+            android:title="Investigación" />
+        <item
+            android:id="@+id/nav_vinculacion"
+            android:icon="@drawable/around"
+            android:title="Vinculación" />
+        <item
+            android:id="@+id/nav_ofertaacademica"
+            android:icon="@drawable/graduation"
+            android:title="Oferta Académica" />
+        <item
+            android:id="@+id/nav_transparencia"
+            android:icon="@drawable/spy"
+            android:title="Transparencia" />
+        <item
+            android:id="@+id/nav_rendicioncuentas"
+            android:icon="@drawable/give_money"
+            android:title="Rendición de cuentas" />
+        <item
+            android:id="@+id/nav_archivos"
+            android:icon="@drawable/signing"
+            android:title="Archivos" />
+        <item
+            android:id="@+id/nav_consultanotas"
+            android:icon="@drawable/evaluation"
+            android:title="Consulta de notas" />
+        <item
+            android:id="@+id/nav_videosuteq"
+            android:icon="@drawable/youtube_symbol"
+            android:title="Canal de Youtube" />
+        <item
+        android:id="@+id/nav_exit"
+        android:icon="@drawable/ic_exit"
+        android:title="Salir" />
+    </group>
+
+</menu>

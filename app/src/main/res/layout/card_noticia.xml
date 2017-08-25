@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvNoticia"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="1dp"
+    app:layout_collapseParallaxMultiplier="0.5">
+
+    <TextView
+        android:id="@+id/LblId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgNoti"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:padding="3dp"
+            android:src="@drawable/logouteqminres" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/LblTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo Noticia"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/LblFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2016-08-18 | Categoria"
+                android:textColor="@color/colorAccent"
+                android:textSize="9sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/LblSubTitulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduccion"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
